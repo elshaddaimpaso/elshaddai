@@ -3,7 +3,7 @@ import nodemailer from "nodemailer";
 
 export const runtime = "nodejs";
 
-const CONTACT_TO = process.env.CONTACT_TO_EMAIL ?? "elshaddaimpaso@gmail.com";
+const CONTACT_TO = process.env.CONTACT_TO_EMAIL || "elshaddaimpaso@gmail.com";
 
 export async function POST(request: Request) {
   try {
@@ -31,10 +31,7 @@ export async function POST(request: Request) {
     if (!gmailUser || !gmailAppPassword) {
       console.error("Contact form: GMAIL_USER or GMAIL_APP_PASSWORD is not set");
       return NextResponse.json(
-        {
-          error:
-            "Email is not configured yet. Please email me directly at elshaddaimpaso@gmail.com.",
-        },
+        { error: "Email is not configured yet. Please email me directly at elshaddaimpaso@gmail.com." },
         { status: 503 }
       );
     }
@@ -50,15 +47,9 @@ export async function POST(request: Request) {
     await transporter.sendMail({
       from: `"Portfolio Contact" <${gmailUser}>`,
       to: CONTACT_TO,
-      replyTo: `"${name}" <${email}>`,
+      replyTo: `${name} <${email}>`,
       subject: `Portfolio message from ${name}`,
-      text: [
-        `Name: ${name}`,
-        `Email: ${email}`,
-        "",
-        "Message:",
-        message,
-      ].join("\n"),
+      text: [`Name: ${name}`, `Email: ${email}`, `Message:`, message].join("\n"),
       html: `
         <p><strong>Name:</strong> ${escapeHtml(name)}</p>
         <p><strong>Email:</strong> <a href="mailto:${escapeHtml(email)}">${escapeHtml(email)}</a></p>
