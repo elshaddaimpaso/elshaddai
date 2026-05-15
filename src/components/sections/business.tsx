@@ -29,7 +29,7 @@ export function Business() {
         <SectionHeading
           label="Entrepreneurship"
           title={siteConfig.techCompany}
-          description="Professional laptop repair, software installation, and digital support across Malawi."
+          description="Professional laptop repair, software installation, and digital support across KUHeS."
         />
 
         <motion.p
