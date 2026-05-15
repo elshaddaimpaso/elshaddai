@@ -133,7 +133,7 @@ export const projects = [
   {
     title: "Storyyteller Enterprise",
     description:
-      "My tech company delivering laptop repair, software installation, troubleshooting, and device optimization across Malawi.",
+      "My tech company delivering laptop repair, software installation, troubleshooting, and device optimization across KUHES.",
     technologies: ["Hardware", "Windows", "macOS", "Linux"],
     tags: ["Storyyteller Enterprise", "IT Services"],
     github: "#",
