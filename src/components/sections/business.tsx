@@ -40,7 +40,7 @@ export function Business() {
         >
           Through <strong className="text-slate-900 dark:text-white">{siteConfig.techCompany}</strong>,
           I provide reliable software installation, laptop repair, troubleshooting, device
-          optimization, and digital assistance to students and professionals across Malawi —
+          optimization, and digital assistance to students and professionals across KUHeS —
           building entrepreneurial skills alongside my medical education.
         </motion.p>
 
