@@ -241,7 +241,7 @@ export const experience = [
     company: "Storyyteller Enterprise",
     period: "2023 – Present",
     description:
-      "Run Storyyteller Enterprise — providing laptop repair, software installation, troubleshooting, device optimization, and digital support to students and professionals across Malawi.",
+      "Run Storyyteller Enterprise — providing laptop repair, software installation, troubleshooting, device optimization, and digital support to students and professionals across KUHeS.",
   },
 ];
 
