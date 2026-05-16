@@ -46,7 +46,7 @@ export const stats = [
 
 export const journey = [
   {
-    year: "2024–Present",
+    year:"2025–Present",
     title: "MBBS — Kamuzu University of Health Sciences",
     description:
       "Pursuing medicine with focus on integrating technology and research into clinical practice.",
@@ -75,19 +75,19 @@ export const skillCategories = [
   {
     title: "Medical & Academic",
     skills: [
-      { name: "Anatomy", level: 75 },
-      { name: "Physiology", level: 70 },
-      { name: "Medical Research Fundamentals", level: 65 },
+      { name: "Anatomy", level: 35 },
+      { name: "Physiology", level: 20 },
+      { name: "Medical Research Fundamentals", level: 35 },
       { name: "Scientific Writing", level: 60 },
     ],
   },
   {
     title: "Technology",
     skills: [
-      { name: "Laptop Repair", level: 90 },
+      { name: "Laptop Repair", level: 50 },
       { name: "Software Installation", level: 95 },
-      { name: "Troubleshooting", level: 92 },
-      { name: "IT Support", level: 88 },
+      { name: "Troubleshooting", level: 80 },
+      { name: "IT Support", level: 75 },
       { name: "Digital Productivity", level: 85 },
     ],
   },
