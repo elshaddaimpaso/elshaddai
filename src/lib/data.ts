@@ -243,6 +243,14 @@ export const experience = [
     description:
       "Run Storyyteller Enterprise — providing laptop repair, software installation, troubleshooting, device optimization, and digital support to students and professionals across Malawi.",
   },
+  {
+    role: "Vice Equipment Director",
+    organization: "United Christian Congregation Malawi (UCC)",
+    period: "2025 – Present",
+    description:
+      "Manage audiovisual equipment and technical support for church services and events. I play the piano and Drums, ministering through music.",
+
+  },
 ];
 
 export const certifications = [
