@@ -287,6 +287,7 @@ export const certifications = [
 ];
 
 export const currentlyLearning = [
+  "Medical school curriculum",
   "Machine learning fundamentals for healthcare",
   "Biostatistics and epidemiology",
   "Health informatics and EHR systems",
