@@ -104,12 +104,12 @@ export const skillCategories = [
 
 export const projects = [
   {
-    title: "AI in Healthcare Research Concepts",
+    title: "Mindwave Website Project",
     description:
-      "Exploring machine learning applications for diagnostic support and clinical decision-making in resource-limited settings.",
-    technologies: ["Python", "Research Design", "Literature Review"],
-    tags: ["AI", "Research", "Healthcare"],
-    github: "#",
+      "A project to create a website for Mindwave, a mental health awareness initiative. The website will provide resources, support, and information to promote mental well-being.",
+    technologies: ["Web Development", "UI/UX Design", "Content Creation"],
+    tags: ["Mental Health", "Awareness", "Web Design"],
+    github: "https://github.com/elshaddaimpaso/mindwave.git",
     demo: "#",
   },
   {
@@ -250,6 +250,13 @@ export const experience = [
     description:
       "Manage audiovisual equipment and technical support for church services and events. I play the piano and Drums, ministering through music.",
   },
+  {
+    role: "Library Prefect",
+    company: "Mtendere Secondary School",
+    period: "2022 – 2023",
+    description:
+      "Helped out organizing books, destribution among peers and maintaining the library.", 
+  }
 ];
 
 export const certifications = [
