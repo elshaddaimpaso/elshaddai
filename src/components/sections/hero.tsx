@@ -79,7 +79,7 @@ export function Hero() {
             <div className="absolute inset-0 rounded-full bg-gradient-to-br from-accent-cyan/30 to-accent-emerald/30 blur-2xl" />
             <div className="relative h-full w-full overflow-hidden rounded-full border-4 border-accent-cyan/30 shadow-glow">
               <Image
-                src="/profile.png"
+                src="/profile2.png"
                 alt={`Portrait of ${siteConfig.name}`}
                 fill
                 priority
