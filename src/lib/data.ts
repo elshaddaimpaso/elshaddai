@@ -237,16 +237,23 @@ export const education = [
 
 export const experience = [
   {
+    role: "Local Officer",
+    company: "Standing Comittee in Medical Education (SCOME) - MSA Malawi",
+    period: "2026 - Present",
+    description:
+      "SCOME (Standing Committee on Medical Education) under MSA Malawi is a student-led body that focuses on improving medical education and empowering medical students to actively shape their learning environment. As a Local Officer, my role is to coordinate activities at the local level, ensuring that medical students in Malawi benefit from initiatives that enhance their academic and professional development.",
+  },
+  {
     role: "Founder & Operator",
     company: "Storyyteller Enterprise",
-    period: "2023 – Present",
+    period: "2025 – Present",
     description:
       "Run Storyyteller Enterprise — providing laptop repair, software installation, troubleshooting, device optimization, and digital support to students and professionals across Malawi.",
   },
   {
     role: "Vice Equipment Director",
     company: "United Christian Congregation Malawi (UCC)",
-    period: "2025 – Present",
+    period: "2026 – Present",
     description:
       "Manage audiovisual equipment and technical support for church services and events. I play the piano and Drums, ministering through music.",
   },
@@ -263,26 +270,32 @@ export const certifications = [
   {
     title: "Python 101 for Data Science",
     provider: "IBM Skills Build",
-    year: "2025",
+    year: "2026",
     status: "completed",
   },
   {
     title: "R Programming for Beginners",
     provider: "Simplilearn",
-    year: "2025",
+    year: "2026",
     status: "completed",
   },
   {
     title: "Introduction to Clinical Health",
     provider: "Global Health Network",
-    year: "2025",
+    year: "2026",
     status: "completed",
   },
   {
     title: "Introduction to Artificial Intelligence",
     provider: "IBM Skills Build",
-    year: "2025",
+    year: "2026",
     status: "completed",
+  },
+  {
+    title: "Mental Health and Multiple Sclerosis",
+    provider: "University of Tasmania",
+    year: "2026",
+    status: "completed"
   },
 ];
 
