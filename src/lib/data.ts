@@ -110,16 +110,16 @@ export const projects = [
     technologies: ["Web Development", "UI/UX Design", "Content Creation"],
     tags: ["Mental Health", "Awareness", "Web Design"],
     github: "https://github.com/elshaddaimpaso/mindwave.git",
-    demo: "#",
+    demo: "https://mindwave-phi.vercel.app",
   },
   {
-    title: "Health-Tech Startup Concepts",
+    title: "One Health reporting System",
     description:
-      "Developing ideas for digital health solutions tailored to African healthcare systems and medical student needs.",
-    technologies: ["Product Design", "Market Research", "Innovation"],
-    tags: ["Startup", "Digital Health", "Africa"],
-    github: "#",
-    demo: "#",
+      "This is a platform that allows individuals from different walks of Malawi to have a system where they can report incidents of many diversities to allow services providers to act wit h precision.",
+    technologies: ["Product Design", "Surveillance System", "Innovation"],
+    tags: ["Startup", "Digital wellbeing", "Malawi"],
+    github: "https://github.com/elshaddaimpaso/One-Health-Reporting-.git",
+    demo: "https://mala-health.vercel.app/",
   },
   {
     title: "Clinical Research Interests",
