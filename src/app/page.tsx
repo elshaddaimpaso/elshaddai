@@ -8,6 +8,7 @@ import { Experience } from "@/components/sections/experience";
 import { Certifications } from "@/components/sections/certifications";
 import { Blog } from "@/components/sections/blog";
 import { Contact } from "@/components/sections/contact";
+import Script from "next/script";
 
 export default function Home() {
   return (
