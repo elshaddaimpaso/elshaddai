@@ -102,50 +102,39 @@ export const skillCategories = [
 
 export const projects = [
   {
-    title: "Mindwave Website Project",
-    description:
-      "A project to create a website for Mindwave, a mental health awareness initiative. The website will provide resources, support, and information to promote mental well-being.",
-    technologies: ["Web Development", "UI/UX Design", "Content Creation"],
-    tags: ["Mental Health", "Awareness", "Web Design"],
-    github: "https://github.com/elshaddaimpaso/mindwave.git",
-    demo: "https://mindwave-phi.vercel.app",
-  },
-  {
-    title: "One Health reporting System",
-    description:
-      "This is a platform that allows individuals from different walks of Malawi to have a system where they can report incidents of many diversities to allow services providers to act wit h precision.",
-    technologies: ["Product Design", "Surveillance System", "Innovation"],
-    tags: ["Startup", "Digital wellbeing", "Malawi"],
-    github: "https://github.com/elshaddaimpaso/One-Health-Reporting-.git",
-    demo: "https://mala-health.vercel.app/",
-  },
-  {
-    title: "Clinical Research Interests",
-    description:
-      "Building foundation in epidemiology, study design, and evidence-based medicine for future research contributions.",
-    technologies: ["SPSS", "Research Methods", "Biostatistics"],
-    tags: ["Clinical Research", "Academic"],
-    github: "#",
-    demo: "#",
-  },
-  {
-    title: "Storyyteller Enterprise",
-    description:
-      "My tech company delivering laptop repair, software installation, troubleshooting, and device optimization across Malawi.",
-    technologies: ["Hardware", "Windows", "macOS", "Linux"],
-    tags: ["Storyyteller Enterprise", "IT Services"],
-    github: "#",
-    demo: "#",
-  },
-  {
-    title: "Digital Solutions for Students",
-    description:
-      "Creating productivity tools and digital workflows to help medical students optimize learning and clinical preparation.",
-    technologies: ["Productivity", "Education Tech", "Automation"],
-    tags: ["EdTech", "Students"],
-    github: "#",
-    demo: "#",
-  },
+  title: "Some Project Title",
+  description: "One-line summary of what this project is.",
+  technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
+  tags: ["Web", "Health"],
+  github: "https://github.com/yourname/some-project",  // real URL or omit entirely
+  demo: "https://some-project.example.com",            // real URL or omit entirely
+
+  // Case study fields — add only what is true
+  slug: "some-project-title",
+  category: "Health",
+  status: "Live",
+  year: 2024,
+  role: "Solo developer and designer",
+  problem: "What gap did this project aim to address?",
+  approach: "How did you approach the problem?",
+  solution: "What did you actually build?",
+  outcomes: [
+    "Only list outcomes you can back up — no invented numbers.",
+    "If unsure, leave this field out entirely.",
+  ],
+  lessons: [
+    "What did you learn?",
+  ],
+  screenshots: [
+    {
+      src: "/screenshots/some-project-cover.png",
+      alt: "Screenshot of the project's main dashboard",
+      caption: "Main dashboard",
+    },
+  ],
+  featured: true,
+}
+   
 ];
 
 export const researchAreas = [
