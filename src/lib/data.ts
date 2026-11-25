@@ -127,7 +127,7 @@ export const projects = [
   ],
   screenshots: [
     {
-      src: "/screenshots/some-project-cover.png",
+      src: "public/profile2.png",
       alt: "Screenshot of the project's main dashboard",
       caption: "Main dashboard",
     },
