@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getAllProjects, getProjectSlug } from "@/lib/project-utils";
+import { getAllArticles, getArticleSlug } from "@/lib/article-utils";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl =
@@ -22,5 +23,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticRoutes, ...projectRoutes];
+  const articleRoutes: MetadataRoute.Sitemap = getAllArticles().map((a) => ({
+    url: `${baseUrl}/writing/${getArticleSlug(a)}`,
+    lastModified: a.date ? new Date(a.date) : now,
+    changeFrequency: "yearly",
+    priority: 0.5,
+  }));
+
+  return [...staticRoutes, ...projectRoutes, ...articleRoutes];
 }
