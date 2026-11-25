@@ -35,22 +35,47 @@
     scroll-behavior: smooth;
   }
 
+  /* Respect reduced-motion for smooth scrolling too */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
   body {
     @apply bg-[hsl(var(--background))] text-[hsl(var(--foreground))] antialiased;
+  }
+
+  /* Focus ring driven by the --ring token for consistency */
+  :focus-visible {
+    outline: 2px solid hsl(var(--ring));
+    outline-offset: 2px;
+    border-radius: 4px;
   }
 }
 
 @layer utilities {
+  /* Editorial gradient — uses only CSS variables that already exist */
   .text-gradient {
-    @apply bg-gradient-to-r from-accent-cyan via-accent-blue to-accent-emerald bg-clip-text text-transparent;
+    background-image: linear-gradient(
+      to right,
+      hsl(var(--accent)),
+      hsl(var(--accent-emerald))
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
   }
 
+  /* Glass surface — no custom tokens needed */
   .glass {
     @apply border border-white/10 bg-white/5 backdrop-blur-xl dark:border-white/10 dark:bg-white/5;
   }
 
+  /* Glass card — replaced shadow-glass with shadow-lg,
+     navy-700 with slate-800 */
   .glass-card {
-    @apply rounded-2xl border border-slate-200/60 bg-white/80 shadow-glass backdrop-blur-xl dark:border-slate-700/50 dark:bg-navy-700/40;
+    @apply rounded-2xl border border-slate-200/60 bg-white/80 shadow-lg backdrop-blur-xl dark:border-slate-700/50 dark:bg-slate-800/40;
   }
 
   .section-padding {
@@ -70,15 +95,4 @@
     background-size: 48px 48px;
   }
 }
-
-/* ────────────────────────────────────────────────
-   Global focus styles (Phase 6)
-   Only visible when navigating with the keyboard.
-   ──────────────────────────────────────────────── */
-@layer base {
-  :focus-visible {
-    outline: 2px solid currentColor;
-    outline-offset: 2px;
-    border-radius: 4px;
-  }
-}
+  
