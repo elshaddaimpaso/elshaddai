@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { PageHeader } from "@/components/page-header";
-import { HomeContactCta } from "@/components/home/contact-cta";
 import {
   getAllArticles,
   sortArticlesByDate,
@@ -41,7 +40,6 @@ export default function WritingPage() {
             <EmptyState />
           </div>
         </section>
-        <HomeContactCta />
       </>
     );
   }
@@ -170,8 +168,6 @@ export default function WritingPage() {
           </div>
         </div>
       </section>
-
-      <HomeContactCta />
     </>
   );
 }
