@@ -11,7 +11,7 @@ export function HomeAboutTeaser() {
           <div className="relative mx-auto w-full max-w-sm md:mx-0">
             <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 dark:border-slate-800 dark:bg-slate-900">
               <Image
-                src="/profile.png"
+                src="/profile2.png"
                 alt="Portrait of El-shaddai Mpaso"
                 fill
                 sizes="(max-width: 768px) 80vw, 400px"
