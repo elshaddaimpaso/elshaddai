@@ -15,6 +15,7 @@ export default function ContactPage() {
         eyebrow="Contact"
         title="Let’s talk."
         description="Whether you are a mentor, collaborator, recruiter, or fellow builder, I would love to hear from you."
+        imageSrc="https://images.unsplash.com/photo-1516387938699-a93567ec168e?q=80&w=2000&auto=format&fit=crop"
       />
       <Contact />
     </>

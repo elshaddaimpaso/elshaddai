@@ -45,6 +45,7 @@ export default async function WorkPage({ searchParams }: WorkPageProps) {
         eyebrow="Work"
         title="Selected projects and case studies."
         description="A curated selection of projects spanning health technology, research tooling, and digital products. Some are live; some are still in progress."
+        imageSrc="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2000&auto=format&fit=crop"
       />
 
       <section className="section-padding">

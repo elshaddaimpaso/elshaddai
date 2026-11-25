@@ -43,8 +43,9 @@ export default function AboutPage() {
         eyebrow="About"
         title="Medicine, technology, and the space between."
         description="I am an MBBS student building toward a career at the intersection of clinical practice, AI, and healthcare innovation — with storytelling as the thread that ties it together."
+        imageSrc="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=2000&auto=format&fit=crop"
       >
-        {/* CV Download Button added here */}
+        {/* CV Download Button */}
         <div className="mt-8">
           <a
             href="/El-shaddai_Mpaso's_CV.pdf"

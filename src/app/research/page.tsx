@@ -44,6 +44,7 @@ export default function ResearchPage() {
         eyebrow="Research"
         title="Questions I want to help answer."
         description="My research interests sit at the intersection of clinical evidence, health data, and context-appropriate technology for African healthcare systems."
+        imageSrc="https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=2000&auto=format&fit=crop"
       />
 
       {/* Research philosophy — editorial prologue */}

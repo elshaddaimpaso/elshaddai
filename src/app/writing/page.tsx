@@ -34,6 +34,7 @@ export default function WritingPage() {
           eyebrow="Writing"
           title="Notes from medicine, technology, and life."
           description="Reflections, essays, and stories — some polished, some still taking shape."
+          imageSrc="https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=2000&auto=format&fit=crop"
         />
         <section className="section-padding">
           <div className="section-container">
@@ -54,6 +55,7 @@ export default function WritingPage() {
         eyebrow="Writing"
         title="Notes from medicine, technology, and life."
         description="Reflections, essays, and stories — some polished, some still taking shape."
+        imageSrc="https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=2000&auto=format&fit=crop"
       />
 
       <section className="section-padding border-t border-slate-200/60 dark:border-slate-800/60">
