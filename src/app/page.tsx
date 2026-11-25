@@ -1,41 +1,32 @@
-import { Hero } from "@/components/sections/hero";
-import { About } from "@/components/sections/about";
-import { Skills } from "@/components/sections/skills";
-import { Projects } from "@/components/sections/projects";
-import { Research } from "@/components/sections/research";
-import { Business } from "@/components/sections/business";
-import { Experience } from "@/components/sections/experience";
-import { Certifications } from "@/components/sections/certifications";
-import { Blog } from "@/components/sections/blog";
-import { Contact } from "@/components/sections/contact";
-import Script from "next/script";
+import type { Metadata } from "next";
+import { HomeHero } from "@/components/home/hero";
+import { HomeFeaturedWork } from "@/components/home/featured-work";
+import { HomeAboutTeaser } from "@/components/home/about-teaser";
+import { HomeFocusAreas } from "@/components/home/focus-areas";
+import { HomeWritingTeaser } from "@/components/home/writing-teaser";
+import { HomeContactCta } from "@/components/home/contact-cta";
 
-export default function Home() {
+export const metadata: Metadata = {
+  title: "El-shaddai Mpaso — Medicine, Technology, Storytelling",
+  description:
+    "El-shaddai Mpaso, also known as Storyyteller — MBBS student, health-tech builder, and storyteller working at the intersection of medicine, technology, and the stories that make medicine human.",
+  openGraph: {
+    title: "El-shaddai Mpaso — Medicine, Technology, Storytelling",
+    description:
+      "MBBS student, health-tech builder, and storyteller working at the intersection of medicine, technology, and the stories that make medicine human.",
+    type: "website",
+  },
+};
+
+export default function HomePage() {
   return (
     <>
-      <Script
-      id="website-schema"
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{
-        __html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Website",
-          name: "El-shaddai Mpaso",
-          alternateName: "Storyyteller",
-          url: "https://elshaddaimpaso.vercel.app/",
-        }),
-      }}
-       />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Research />
-      <Business />
-      <Experience />
-      <Certifications />
-      <Blog />
-      <Contact />
+      <HomeHero />
+      <HomeFeaturedWork />
+      <HomeAboutTeaser />
+      <HomeFocusAreas />
+      <HomeWritingTeaser />
+      <HomeContactCta />
     </>
   );
 }
