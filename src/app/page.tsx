@@ -12,6 +12,19 @@ import { Contact } from "@/components/sections/contact";
 export default function Home() {
   return (
     <>
+      <Script
+      id="website-schema"
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Website",
+          name: "El-shaddai Mpaso",
+          alternateName: "Storyyteller",
+          url: "https://elshaddaimpaso.vercel.app/",
+        }),
+      }}
+       />
       <Hero />
       <About />
       <Skills />

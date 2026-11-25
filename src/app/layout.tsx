@@ -25,13 +25,14 @@ export const metadata: Metadata = {
   keywords: siteConfig.keywords,
   authors: [{ name: siteConfig.name }],
   creator: siteConfig.name,
+  applicationName: "El-shaddai Mpaso",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: siteConfig.url,
     title: `${siteConfig.name} | Medical Student & Health Tech Innovator`,
     description: siteConfig.description,
-    siteName: siteConfig.name,
+    siteName: "El-shaddai Mpaso",
   },
   twitter: {
     card: "summary_large_image",
