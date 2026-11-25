@@ -3,7 +3,7 @@ export const siteConfig = {
   title: "MBBS Student | Health Tech | AI in Healthcare",
   description:
     "First-year MBBS student at Kamuzu University of Health Sciences. Future physician building at the intersection of medicine, AI, clinical research, and healthcare innovation in Africa.",
-  url: "https://elshaddaimpaso.dev",
+  url: "https://elshaddaimpaso.vercel.app",
   email: "elshaddaimpaso@gmail.com",
   linkedin: "https://linkedin.com/in/el-shaddai-mpaso-00b9aa378",
   github: "https://github.com/elshaddaimpaso",
@@ -27,15 +27,13 @@ export const siteConfig = {
 };
 
 export const navLinks = [
-  { href: "#about", label: "About" },
-  { href: "#skills", label: "Skills" },
-  { href: "#projects", label: "Projects" },
-  { href: "#research", label: "Research" },
-  { href: "#business", label: "Services" },
-  { href: "#experience", label: "Experience" },
-  { href: "#blog", label: "Insights" },
-  { href: "#contact", label: "Contact" },
-];
+  { href: "/", label: "Home" },
+  { href: "/about", label: "About" },
+  { href: "/work", label: "Work" },
+  { href: "/research", label: "Research" },
+  { href: "/writing", label: "Writing" },
+  { href: "/contact", label: "Contact" },
+] as const;
 
 export const stats = [
   { label: "MBBS Student", value: "Year 1", icon: "GraduationCap" },
