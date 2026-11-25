@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Download } from "lucide-react";
 import { PageHeader } from "@/components/page-header";
 import { SectionLabel } from "@/components/ui/section-label";
 import { HomeContactCta } from "@/components/home/contact-cta";
@@ -42,7 +43,20 @@ export default function AboutPage() {
         eyebrow="About"
         title="Medicine, technology, and the space between."
         description="I am an MBBS student building toward a career at the intersection of clinical practice, AI, and healthcare innovation — with storytelling as the thread that ties it together."
-      />
+      >
+        {/* CV Download Button added here */}
+        <div className="mt-8">
+          <a
+            href="/El-shaddai_Mpaso's_CV.pdf"
+            download="El-shaddai-Mpaso-CV.pdf"
+            aria-label="Download CV (PDF)"
+            className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-slate-700 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-slate-300"
+          >
+            <Download className="h-4 w-4" />
+            Download CV
+          </a>
+        </div>
+      </PageHeader>
 
       {/* At a glance */}
       <section className="border-b border-slate-200/60 dark:border-slate-800/60">

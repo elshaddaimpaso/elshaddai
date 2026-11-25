@@ -16,8 +16,18 @@ export function HomeHero() {
     : { initial: { opacity: 0, y: 16 }, animate: { opacity: 1, y: 0 } };
 
   return (
-    <section className="section-padding pt-32 md:pt-40">
-      <div className="section-container">
+    <section className="relative overflow-hidden pt-32 md:pt-40 pb-20">
+      {/* Background Image Layer */}
+      <div
+        className="absolute inset-0 z-0 h-full w-full bg-cover bg-center bg-no-repeat"
+        // Using a medical/tech abstract image for the home page
+        style={{ backgroundImage: `url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=2070&auto=format&fit=crop')` }}
+      />
+      {/* Theme-aware Overlay */}
+      <div className="absolute inset-0 z-0 bg-gradient-to-b from-white/90 via-white/80 to-white dark:from-slate-950/90 dark:via-slate-950/80 dark:to-slate-950" />
+
+      {/* Content Layer */}
+      <div className="section-container relative z-10">
         <div className="grid items-end gap-12 md:grid-cols-[1.4fr_1fr]">
           {/* Left: identity + tagline + CTAs */}
           <div>
