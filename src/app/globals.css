@@ -70,3 +70,15 @@
     background-size: 48px 48px;
   }
 }
+
+/* ────────────────────────────────────────────────
+   Global focus styles (Phase 6)
+   Only visible when navigating with the keyboard.
+   ──────────────────────────────────────────────── */
+@layer base {
+  :focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+}

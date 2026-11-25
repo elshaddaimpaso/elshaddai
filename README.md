@@ -1,53 +1,46 @@
 # El-shaddai Mpaso — Portfolio
 
-Professional portfolio website for an MBBS student at Kamuzu University of Health Sciences, positioned at the intersection of medicine, AI, clinical research, and healthcare innovation.
+Personal portfolio for **El-shaddai Mpaso** (also known as *Storyyteller*) — an MBBS student, health-tech builder, researcher, and storyteller.
 
-## Tech Stack
+Built with **Next.js 15 App Router**, **React 19**, **TypeScript**, **Tailwind CSS**, **Framer Motion**, and **next-themes**.
 
-- **Next.js 15** (App Router)
-- **React 19**
-- **Tailwind CSS**
-- **Framer Motion**
-- **Lucide Icons**
-- **next-themes** (dark/light mode)
+---
+
+## Stack
+
+- **Framework:** Next.js 15 (App Router)
+- **Runtime UI:** React 19 + TypeScript
+- **Styling:** Tailwind CSS 3.4
+- **Motion:** Framer Motion (respects `prefers-reduced-motion`)
+- **Theme:** next-themes (light / dark / system)
+- **Icons:** lucide-react
+- **Email:** nodemailer via `/api/contact`
+- **Deployment:** Vercel
+
+---
+
+## Routes
+
+| Path | Purpose |
+|---|---|
+| `/` | Homepage — hero, featured work, about teaser, focus areas, writing teaser, contact CTA |
+| `/about` | Personal story, trajectory, credentials, capabilities, enterprise |
+| `/work` | Filterable project gallery (`?category=Health` etc.) |
+| `/work/[slug]` | Individual project case study |
+| `/research` | Research interests and philosophy |
+| `/writing` | Article listing (empty state until articles exist) |
+| `/writing/[slug]` | Individual article |
+| `/contact` | Contact form |
+| `/sitemap.xml` | Auto-generated (static routes + projects + articles) |
+| `/robots.txt` | Auto-generated |
+| `/feed.xml` | RSS feed for `/writing` |
+| `/manifest.webmanifest` | Web app manifest |
+| `/opengraph-image` | Dynamic OG image |
+
+---
 
 ## Getting Started
 
 ```bash
 npm install
 npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000).
-
-## Customize
-
-1. Update contact links and email in `src/lib/data.ts`
-2. Replace the hero portrait placeholder with your photo in `src/components/sections/hero.tsx`
-3. Add your CV PDF to `public/cv.pdf`
-4. Update `siteConfig.url` for production SEO
-
-## Deploy
-
-Deploy to [Vercel](https://vercel.com), [Netlify](https://netlify.com), or [GitHub Pages](https://pages.github.com):
-
-```bash
-npm run build
-```
-
-### Vercel
-
-```bash
-npx vercel
-```
-
-## Project Structure
-
-```
-src/
-├── app/           # Layout, page, global styles
-├── components/    # UI, navbar, footer, sections
-└── lib/           # Data & utilities
-```
-
-Built for future expansion: blog CMS, publications, booking, and project showcases.
